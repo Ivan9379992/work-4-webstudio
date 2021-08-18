@@ -105,7 +105,7 @@ p, ul, li{
 
 
 /* соцыальные сети */
-.icon{
+.contact-icon{
     fill: currentColor;
     margin-right: 10px;
 }
@@ -113,6 +113,7 @@ p, ul, li{
 
 /* общие стили для заголовков */
 .title-section{
+    margin-bottom: 50px;
     font-weight: bold;
     font-size: 36px;
     line-height: 1.16;
@@ -277,5 +278,81 @@ header> .container{
 }
 
 /* What are we doing */
+.our-work-items{
+    --grid-item:3; 
+}
 
+/* our team */
+.team{
+    padding-top: 94px;
+    background-color: var(--second-section-bgc);
+}
+.team-card{
+    background:var(--white-bgc);
 
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.team-title{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title-color);
+}
+.team-text{
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.18;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--main-color);
+}
+
+.team-social-icon-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.team-social-icon-items :not(:last-child){
+    margin-right: 10px;
+    
+}
+.team-social-link{
+    display: flex;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color);
+    background-color: green;
+}
+.team-social-icon{
+    width: 44px;
+    height: 44px;
+    fill: currentColor;
+}
+
+.team-social-link :hover.team-social-icon,
+.team-social-link :focus.team-social-icon{
+    background-color:var(--accent-bgc);
+    color: var(--white-color);
+    fil: var(--white-color);
+}
+
+.icon {
+    display: flex;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    fill: currentColor;
+  }

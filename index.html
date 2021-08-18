@@ -29,7 +29,7 @@
             <ul class="contact-items list">
                 <li class="contact-item link">
                     <a class="link" href="mailto:info@devstudio.com">
-                        <svg class="icon" width="16" height="10">
+                        <svg class="contact-icon" width="16" height="10">
                             <use href="./images/icons.svg#icon-envelope"></use>
                         </svg>
                         info@devstudio.com
@@ -37,7 +37,7 @@
                 </li>
                 <li class="contact-item link">
                     <a class="link" href="tel:+380961111111">
-                        <svg class="icon" width="10" height="16">
+                        <svg class="contact-icon" width="10" height="16">
                             <use href="./images/icons.svg#icon-smartphone"></use.>
                         </svg>
                         +38 096 111 11 11
@@ -97,8 +97,163 @@
                 </ul>
             </section>
             <!-- What are we doing -->
-            <section>
+            <section class="section">
                 <h2 class="title-section">Чем мы занимаемся</h2>
+                <ul class="our-work-items grid list">
+                    <li class="grid-item"><img src="./images/our-work-1.png"width="370" height="294" alt="photo our work"></li>
+                    <li class="grid-item"><img src="./images/our-work-2.png"width="370" height="294" alt="photo our work"></li>
+                    <li class="grid-item"><img src="./images/our-work-3.png"width="370" height="294" alt="photo our work"></li>
+                </ul>
+            </section>
+            <!-- our team -->
+            <section class="team section">
+                <h2 class="title-section">Наша команда</h2>
+                <ul class="grid list">
+                    <li class="team-card grid-item">
+                        <img src="./images/our-team-1.jpg" width="270" height="260" alt="photo">
+                        <h3 class="team-title">Игорь Демьяненко</h3>
+                        <p class="team-text">Product Designer</p>
+                        <!-- socia list -->
+                        <ul class="team-social-icon-items list">
+                            <li class="team-social-item">
+                                <a class="team-social-link" href="">
+                                <svg class="team-social-icon icon">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                                </a>
+                            </li>
+                            <li class="team-social-item">
+                                <a class="team-social-link" href="">
+                                <svg class="team-social-icon icon">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                                </a>
+                            </li>
+                            <li class="team-social-item">
+                                <a class="team-social-link" href="">
+                                <svg class="team-social-icon icon">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                                </a>
+                            </li>
+                            <li class="team-social-item">
+                                <a class="team-social-link" href="">
+                                <svg class="team-social-icon icon">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="team-card grid-item">
+                        <img src="./images/our-team-2.jpg" width="270" height="260" alt="photo">
+                        <h3 class="team-title">Ольга Репина</h3>
+                        <p class="team-text">Frontend Developer</p>
+                        <!-- socia list -->
+                        <ul class="team-social-icon-items list">
+                            <li class="team-social-item">
+                                <a class="team-social-link" href="">
+                                <svg class="team-social-icon icon">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                                </a>
+                            </li>
+                            <li class="team-social-item">
+                                <a class="team-social-link" href="">
+                                <svg class="team-social-icon icon">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                                </a>
+                            </li>
+                            <li class="team-social-item">
+                                <a class="team-social-link" href="">
+                                <svg class="team-social-icon icon">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                                </a>
+                            </li>
+                            <li class="team-social-item">
+                                <a class="team-social-link" href="">
+                                <svg class="team-social-icon icon">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="team-card grid-item">
+                        <img src="./images/our-team-3.jpg" width="270" height="260" alt="photo">
+                        <h3 class="team-title">Николай Тарасов</h3>
+                        <p class="team-text">Marketing</p>
+                        <!-- socia list -->
+                        <ul class="team-social-icon-items list">
+                            <li class="team-social-item">
+                                <a class="team-social-link" href="">
+                                <svg class="team-social-icon icon">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                                </a>
+                            </li>
+                            <li class="team-social-item">
+                                <a class="team-social-link" href="">
+                                <svg class="team-social-icon icon">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                                </a>
+                            </li>
+                            <li class="team-social-item">
+                                <a class="team-social-link" href="">
+                                <svg class="team-social-icon icon">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                                </a>
+                            </li>
+                            <li class="team-social-item">
+                                <a class="team-social-link" href="">
+                                <svg class="team-social-icon icon">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="team-card grid-item">
+                        <img src="./images/our-team-4.jpg" width="270" height="260" alt="photo">
+                        <h3 class="team-title">Михаил Ермаков</h3>
+                        <p class="team-text">UI Designer</p>
+                        <!-- socia list -->
+                        <ul class="team-social-icon-items list">
+                            <li class="team-social-item">
+                                <a class="team-social-link" href="">
+                                <svg class="team-social-icon icon">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                                </a>
+                            </li>
+                            <li class="team-social-item">
+                                <a class="team-social-link" href="">
+                                <svg class="team-social-icon icon">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                                </a>
+                            </li>
+                            <li class="team-social-item">
+                                <a class="team-social-link" href="">
+                                <svg class="team-social-icon icon">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                                </a>
+                            </li>
+                            <li class="team-social-item">
+                                <a class="team-social-link" href="">
+                                <svg class="team-social-icon icon">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
 
             </section>
         </div>
