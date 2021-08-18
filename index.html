@@ -1,35 +1,109 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mein page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/stiles.css">
+    <title>mein page WebStudio</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
-<!-- mein page -->
 <body>
-    <!-- Header -->
+    <!-- header -->
     <header>
-        <!-- navigation -->
-        <nav>
-            <ul class="wwww list">
-                <li><a href="./">WebStudio</a></li>
-                <li><a href="">Студия</a></li>
-                <li><a href="">Портфолио</a></li>
-                <li><a href="">Контакты</a></li>
+        <div class="container">
+            
+                <!-- logo -->
+            <a class="link-logo" href="./"> <span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
+            <nav class="mein-nav">
+            <ul class="nav-items list">
+                <li class="link"><a class="link nav-item" href="">Контакты</a></li>
+                <li class="link"><a class="link nav-item" href="">Портфолио</a></li>
+                <li class="link"><a class="link nav-item" href="">Контакты</a></li>
             </ul>
-        </nav>
-        <!-- contact -->
-        <ul class="list">
-            <li><a href="mailto:info@devstudio.com"> 
-                info@devstudio.com
-                </a>
-            </li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+            </nav>
+            <!-- contact -->
+            <ul class="contact-items list">
+                <li class="contact-item link">
+                    <a class="link" href="mailto:info@devstudio.com">
+                        <svg class="icon" width="16" height="10">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="contact-item link">
+                    <a class="link" href="tel:+380961111111">
+                        <svg class="icon" width="10" height="16">
+                            <use href="./images/icons.svg#icon-smartphone"></use.>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
+    <!-- main -->
+    <main>
+            <!-- hero -->
+        <section class="hero">
+            <h1 class="title-hero">Эффективные решения для вашего бизнеса</h1>
+            <button class="button-hero" type="button">Заказать услугу</button>
+        </section>
+        <div class="container">
+            <section class="section">
+                <!-- work principles -->
+                <h2 class="visually-hidden">work principles</h2>
+                <ul class="work-principles-items grid list">
+                    <li class="work-principles-item grid-item">
+                        <div class="work-principles-box-icon">
+                            <svg class="work-principles-icon" weidht="70" height="70">
+                                <use href="./images/icons.svg#icon-antenna"></use>
+                            </svg>
+                        </div>
+                        <h3 class="work-principles-title">Внимание к деталям</h3>
+                        <p class="work-principles-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    </li>
+                    <li class="work-principles-item grid-item">
+                        <div class="work-principles-box-icon">
+                            <svg class="work-principles-icon" weidht="70" height="70">
+                                <use href="./images/icons.svg#icon-clock"></use>
+                            </svg>
+                        </div>
+                        <h3 class="work-principles-title">Внимание к деталям</h3>
+                        <p class="work-principles-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    </li>
+                    <li class="work-principles-item grid-item">
+                        <div class="work-principles-box-icon">
+                            <svg class="work-principles-icon" weidht="70" height="70">
+                                <use href="./images/icons.svg#icon-diagram"></use>
+                            </svg>
+                        </div>
+                        <h3 class="work-principles-title">Внимание к деталям</h3>
+                        <p class="work-principles-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    </li>
+                    <li class="work-principles-item grid-item">
+                        <div class="work-principles-box-icon">
+                            <svg class="work-principles-icon" weidht="70" height="70">
+                                <use href="./images/icons.svg#icon-astronaut"></use>
+                            </svg>
+                        </div>
+                        <h3 class="work-principles-title">Внимание к деталям</h3>
+                        <p class="work-principles-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    </li>
+                </ul>
+            </section>
+            <!-- What are we doing -->
+            <section>
+                <h2 class="title-section">Чем мы занимаемся</h2>
+
+            </section>
+        </div>
+
+    </main>
     
 </body>
 </html>

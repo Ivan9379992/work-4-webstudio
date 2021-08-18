@@ -1,0 +1,281 @@
+/* шрифты */
+
+
+/* переменные */
+:root{
+    --main-color:#757575;
+    --title-color:#212121;
+    --accent-color:#2196F3;
+    --white-color:#FFFFFF;
+
+    --white-bgc: #FFFFFF;
+    --dark-bgc: #2F303A;
+    --main-section-bgc: #E5E5E5;
+    --second-section-bgc: #F5F4FA;
+    --accent-bgc: #2196F3;
+
+    --mein-font-famely-Roboto: "Roboto"; 
+    --mein-font-famely-Raleway: "Raleway";
+
+    --grid-item:4;
+}
+
+/* теги */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+img {
+    display: block;
+    height: auto;
+    min-width: 100%;
+}
+
+
+/* утилиты */
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+h1, h2, h3, h4{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+p, ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* общие класы */
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.section{
+    margin-bottom: 94px;
+}
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.link {
+    text-decoration: none;
+    color: var(--main-color);
+}
+.link :hover,
+.link :focus{
+    color: var(--accent-color);
+}
+/* cетка елементов */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;   
+}
+
+.grid-item{
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - var(--grid-item) * 30px) / var(--grid-item));
+}
+
+
+/* соцыальные сети */
+.icon{
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+
+/* общие стили для заголовков */
+.title-section{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title-color);
+
+}
+/* стилизвция по порядку */
+
+/* header */
+header> .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link-logo{
+    margin-right: 93px;
+    font-family: Raleway;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    
+    letter-spacing: 0.03em;
+}
+.logo-web{
+    color: var(--accent-color);
+
+}
+.logo-studio{
+    color: var(--title-color);
+}
+
+.mein-nav{
+    display: flex;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-items li + li{
+    margin-left: 50px;
+}
+
+.nav-item{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px ;
+}
+
+.contact-items{
+    display: flex;
+    margin-left: auto;
+}
+.contact-items :not(:last-child){
+    margin-right: 30px;
+}
+
+
+/* mein */
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 96px;
+    background-image: 
+    url(../images/hero-bg.jpg), 
+    linear-gradient(
+        to top,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4));
+    margin-left: auto;
+    margin-right: auto;
+    width: 1600px;
+    height: 600px;
+    background-color: var(--dark-bgc);
+}
+.title-hero{
+    margin-bottom: 30px;
+    max-width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--white-color);
+
+}
+.button-hero{
+    
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+
+    letter-spacing: 0.06em;
+
+    color: var(--white-color);
+    background: var(--accent-bgc);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px
+    ;
+}
+
+
+/* work principles */
+.work-principles-items{
+
+}
+
+.work-principles-item{
+
+}
+
+.work-principles-box-icon{
+    display: flex;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: var(--second-section-bgc);
+}
+
+.work-principles-icon{
+    width: 70px;
+    height: 70px;
+
+}
+
+.work-principles-title{
+    margin-bottom: 10px;
+    
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--title-color);
+}
+
+.work-principles-text{
+    
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+
+    color: var(--main-color);
+}
+
+/* What are we doing */
+
+
