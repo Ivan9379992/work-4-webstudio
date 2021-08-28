@@ -31,6 +31,11 @@ html {
     box-sizing: inherit;
 }
 
+
+header{
+    border-bottom: 1px solid #ECECEC;
+}
+
 body {
     font-family: "Roboto", sans-serif;
 }
@@ -422,6 +427,10 @@ letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
 
+.addres-item{
+    margin-top: 9px;
+}
+
 .title-footer{
     font-family: Roboto;
     font-style: normal;
@@ -460,3 +469,52 @@ color: rgba(255, 255, 255, 0.6);
 .social-link-footer:hover {
     background-color: var(--accent-bgc);
 }
+
+
+
+/* portfolio stiles */
+
+.portfolio-header:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-bgc);
+}
+
+.portfolio-section{
+    margin-top: 94px;
+    margin-bottom: 94px;
+    /* background-color: var(--main-section-bgc); */
+}
+
+.button-list{
+    display: flex;
+    justify-content: center;
+}
+
+.button-list :not(:last-child){
+    margin-right: 9px;
+}
+
+.portfolio-buttom{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 6px 22px;
+
+    color: var(--title-color);
+    border: 0px;
+    border-radius: 4px;
+}
+
+.portfolio-buttom:hover,
+.portfolio-buttom:focus{
+    color: var(--white-color);
+    background-color: var(--accent-bgc);
+}
+
