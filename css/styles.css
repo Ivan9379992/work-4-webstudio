@@ -491,6 +491,7 @@ color: rgba(255, 255, 255, 0.6);
 
 .button-list{
     display: flex;
+    margin-bottom: 50px;
     justify-content: center;
 }
 
@@ -518,3 +519,68 @@ color: rgba(255, 255, 255, 0.6);
     background-color: var(--accent-bgc);
 }
 
+/* exemple portfolio */
+.portfolio-item{
+    position: relative;
+    padding-bottom: 20px;
+    width: 370px;
+    --grid-item:3;
+    background: var(--white-bgc);
+    border: 1px solid #EEEEEE;
+}
+
+.portfolio-link{
+    text-decoration: none;
+}
+
+.portfolio-title{
+    margin-top: 20px;
+    margin-left: 24px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+
+    letter-spacing: 0.06em;
+
+    color: var(--title-color)
+}
+
+.portfolio-text{
+    margin-left: 24px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.87;
+
+    letter-spacing: 0.03em;
+
+    color: var(--main-color);
+}
+
+.portfolio-text-hover{
+    display: none;
+    height: 294px;
+    padding-top: 63px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.56;
+
+    letter-spacing: 0.03em;
+
+    color: var(--white-color);
+    background: rgba(33, 150, 243, 0.9);
+}
+
+.portfolio-link:hover .portfolio-text-hover,
+.portfolio-link:focus .portfolio-text-hover{
+    display: block;
+    position: absolute;
+    
+}
+.portfolio-link:hover {
+    display: block;
+    /* padding-bottom: 20px; */
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
