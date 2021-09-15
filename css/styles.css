@@ -556,6 +556,7 @@ color: rgba(255, 255, 255, 0.6);
 
 .portfolio-link{
     text-decoration: none;
+    position: relative;
 }
 
 .portfolio-title{
@@ -593,6 +594,8 @@ color: rgba(255, 255, 255, 0.6);
     line-height: 1.56;
 
     letter-spacing: 0.03em;
+    /* transform: translateX(100%); */
+    
 
     color: var(--white-color);
     background: rgba(33, 150, 243, 0.9);
@@ -602,7 +605,7 @@ color: rgba(255, 255, 255, 0.6);
 .portfolio-link:focus .portfolio-text-hover{
     display: block;
     position: absolute;
-    
+    transform: translateY(0);
 }
 .portfolio-link:hover {
     display: block;
