@@ -187,6 +187,7 @@ header> .container{
 
 /* mein */
 .hero{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -618,4 +619,55 @@ color: rgba(255, 255, 255, 0.6);
     position: relative;
     overflow: hidden;
     /* transition: transform 500ms; */
+}
+
+/* modal windows */
+.backdrop{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1600px;
+    height: 1024px;    
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 580px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+} 
+
+.modal-button-close{
+    position: absolute;
+    right: 30px;
+    top: 21px;
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+
+    background: #FFFFFF;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.icon-button-close{
+    position: absolute;
+    left: 22.22%;
+    right: 16.67%;
+    top: 16.67%;
+    bottom: 22.22%;
+    width: 18px;
+    height: 18px;
+    fill: #000000;
 }
